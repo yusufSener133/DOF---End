@@ -20,20 +20,26 @@ public class FarmUI : MonoBehaviour
     }
     public void UpgradeFarmButton()
     {
-        if (_count == 4)
-        {
-            _upgradePanel.SetActive(false);
-            _maxPanel.SetActive(true);
-            return;
-        }
         if (GameManager.Instance.Coin >= _value)
         {
             _upgradeText.text = "Upgrade";
             _farm.UpgradeFarm(_count);
             GameManager.Instance.Coin -= _value;
+            if (_count == 4)
+            {
+                _upgradePanel.SetActive(false);
+                _maxPanel.SetActive(true);
+                return;
+            }
             _value *= 2;
             _count++;
             UpdateCostText();
+            if (_count == 4)
+        {
+            _upgradePanel.SetActive(false);
+            _maxPanel.SetActive(true);
+            return;
+        }
         }
     }
     private void UpdateCostText()

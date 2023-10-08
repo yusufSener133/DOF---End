@@ -11,4 +11,6 @@ public class UIManager : MonoBehaviour
         _coinText.text = GameManager.Instance.Coin + "";
     }
 
+
+
 }/**/
