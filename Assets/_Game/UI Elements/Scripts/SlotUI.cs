@@ -8,6 +8,7 @@ public class SlotUI : MonoBehaviour
 {
     public Image itemIcon;
     public TMP_Text quantityText;
+    public GameObject SellButton;
 
     public void SetItem(Inventory.Slot slot)
     {
@@ -16,6 +17,7 @@ public class SlotUI : MonoBehaviour
             itemIcon.sprite = slot.icon;
             itemIcon.color = new Color(1, 1, 1, 1);
             quantityText.text = slot.Count.ToString();
+            SellButton.SetActive(true);
         }
     }
     public void SetEmpty()
@@ -23,6 +25,7 @@ public class SlotUI : MonoBehaviour
         itemIcon.sprite = null;
         itemIcon.color = new Color(1, 1, 1, 0);
         quantityText.text = "";
+        SellButton.SetActive(false);
     }
 
 }/**/

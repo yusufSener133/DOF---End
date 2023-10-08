@@ -40,14 +40,18 @@ public class InventoryUI : MonoBehaviour
         Remove(slotId);
         GameManager.Instance.Coin += item.Data.Value;
     }
-    public void SellAll(int slotId)
+    public void SellAll()
     {
-        Item item = GameManager.Instance.ItemManager.GetItemByName(_player.Inventory.slots[slotId].itemName);
-        while (_player.Inventory.slots[slotId].Count != 0)
+        for (int i = 0; i < _player.Inventory.slots.Count; i++)
         {
-            Remove(slotId);
-            GameManager.Instance.Coin += item.Data.Value;
+            Item item = GameManager.Instance.ItemManager.GetItemByName(_player.Inventory.slots[i].itemName);
+            while (_player.Inventory.slots[i].Count != 0)
+            {
+                Remove(i);
+                GameManager.Instance.Coin += item.Data.Value;
+            }
         }
+
     }
     public void Remove(int slotId)
     {

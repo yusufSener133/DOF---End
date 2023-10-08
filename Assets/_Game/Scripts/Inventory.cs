@@ -23,6 +23,7 @@ public class Inventory
         {
             itemName = item.Data.ItemName;
             icon = item.Data.Icon;
+            Count++;
         }
         public bool IsEmpty() => itemName == "" && Count == 0 ? true : false;
         public void RemoveItem()

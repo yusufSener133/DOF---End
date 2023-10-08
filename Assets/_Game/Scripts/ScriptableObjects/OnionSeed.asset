@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a10563144d1e855488a7efbe6047b8e7, type: 3}
-  m_Name: OnionSeed 1
+  m_Name: OnionSeed
   m_EditorClassIdentifier: 
   ItemName: OnionSeed
   Icon: {fileID: -1502106586, guid: e740a99540be6ff4589815ce4353e316, type: 3}
-  Value: 1
-  Cost: 10
-  GrowingSpeed: 0.15
+  Value: 250
+  GrowingSpeed: 0.005

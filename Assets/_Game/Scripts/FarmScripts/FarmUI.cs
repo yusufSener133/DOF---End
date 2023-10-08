@@ -1,16 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 
 public class FarmUI : MonoBehaviour
 {
-    [SerializeField] GameObject _upgradePanel, _maxPanel;
-    [SerializeField] TMP_Text _upgradeText, _costText;
+    [SerializeField] private GameObject _upgradePanel, _maxPanel;
+    [SerializeField] private TMP_Text _upgradeText, _costText;
+    [SerializeField] private float _value = 10;
     private Farm _farm;
     private int _count = 0;
-    private float _value = 10;
     private void Awake()
     {
         _farm = GetComponent<Farm>();
@@ -32,7 +31,7 @@ public class FarmUI : MonoBehaviour
             _upgradeText.text = "Upgrade";
             _farm.UpgradeFarm(_count);
             GameManager.Instance.Coin -= _value;
-            _value *= 3;
+            _value *= 2;
             _count++;
             UpdateCostText();
         }

@@ -8,6 +8,5 @@ public class ItemData : ScriptableObject
     public string ItemName = "Item Name";
     public Sprite Icon;
     public int Value = 1;
-    public int Cost = 10;
     [Range(0, 1)] public float GrowingSpeed = 1f;
 }/**/

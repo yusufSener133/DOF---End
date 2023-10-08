@@ -14,6 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemName: CabbageSeed
   Icon: {fileID: 307804521, guid: e740a99540be6ff4589815ce4353e316, type: 3}
-  Value: 1
-  Cost: 10
-  GrowingSpeed: 0.15
+  Value: 10
+  GrowingSpeed: 0.1

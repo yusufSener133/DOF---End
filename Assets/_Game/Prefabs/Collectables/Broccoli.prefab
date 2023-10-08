@@ -96,7 +96,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2190958637770095267}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.1
   m_Height: 1
@@ -114,6 +114,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93ecf339c8e3be94a96ac8a2584fc0c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _growedEffect: {fileID: 3356045690091143271, guid: d19ec042149d6094399a7a17078cb755,
+    type: 3}
   _data: {fileID: 11400000, guid: 3d0cd38f723858141ade618b1a54c411, type: 2}
 --- !u!114 &310110915813795430
 MonoBehaviour:

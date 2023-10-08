@@ -14,6 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemName: BeetSeed
   Icon: {fileID: -109339393, guid: e740a99540be6ff4589815ce4353e316, type: 3}
-  Value: 1
-  Cost: 10
-  GrowingSpeed: 0.15
+  Value: 2
+  GrowingSpeed: 0.5
