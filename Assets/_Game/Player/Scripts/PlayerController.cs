@@ -52,4 +52,11 @@ public class PlayerController : MonoBehaviour
                 _target.transform.position = new Vector3(hit.point.x, transform.position.y, hit.point.z);
         }
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Wall"))
+        {
+            _animator.SetBool("isMoving", false);
+        }
+    }
 }/**/
